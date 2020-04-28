@@ -146,7 +146,9 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # allow all host headers
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['jimmy-kyalo.herokuapp.com']
+
+    DEBUG = False
 
     # static asset config
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
